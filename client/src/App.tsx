@@ -8,6 +8,9 @@ import Home from "./pages/Home";
 import Articles from "./pages/Articles";
 import ArticleDetail from "./pages/ArticleDetail";
 import Sitemap from "./pages/Sitemap";
+import About from "./pages/About";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 
 function Router() {
   return (
@@ -16,6 +19,9 @@ function Router() {
       <Route path="/articles" component={Articles} />
       <Route path="/article/:slug" component={ArticleDetail} />
       <Route path="/sitemap.xml" component={Sitemap} />
+      <Route path="/about" component={About} />
+      <Route path="/privacy" component={Privacy} />
+      <Route path="/terms" component={Terms} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
